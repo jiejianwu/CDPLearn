@@ -22,6 +22,7 @@
 		13FCE6E31EAA0B3900AB652F /* NewCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6E21EAA0B3900AB652F /* NewCardTableViewController.swift */; };
 		13FCE6E61EAB360300AB652F /* GroupManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6E51EAB360300AB652F /* GroupManagerViewController.swift */; };
 		13FCE6E81EAB373F00AB652F /* Group+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6E71EAB373F00AB652F /* Group+Extension.swift */; };
+		13FCE6EB1EADCD0700AB652F /* GroupMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6EA1EADCD0700AB652F /* GroupMemberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		13FCE6E41EAA12DC00AB652F /* CDPLearn 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CDPLearn 3.xcdatamodel"; sourceTree = "<group>"; };
 		13FCE6E51EAB360300AB652F /* GroupManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupManagerViewController.swift; sourceTree = "<group>"; };
 		13FCE6E71EAB373F00AB652F /* Group+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+Extension.swift"; sourceTree = "<group>"; };
+		13FCE6E91EAB73E300AB652F /* CDPLearn 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CDPLearn 4.xcdatamodel"; sourceTree = "<group>"; };
+		13FCE6EA1EADCD0700AB652F /* GroupMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMemberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 				13FCE6E01EAA01C900AB652F /* CardsManagerViewController.swift */,
 				13FCE6E21EAA0B3900AB652F /* NewCardTableViewController.swift */,
 				13FCE6E51EAB360300AB652F /* GroupManagerViewController.swift */,
+				13FCE6EA1EADCD0700AB652F /* GroupMemberViewController.swift */,
 			);
 			path = CDPLearn;
 			sourceTree = "<group>";
@@ -189,6 +193,7 @@
 				13FCE6E81EAB373F00AB652F /* Group+Extension.swift in Sources */,
 				13EB2BB91EA9B18D00FCE828 /* BankCard+Extension.swift in Sources */,
 				1310AFDD1EA75B76009AF3A3 /* ViewController.swift in Sources */,
+				13FCE6EB1EADCD0700AB652F /* GroupMemberViewController.swift in Sources */,
 				1310AFE31EA75B76009AF3A3 /* CDPLearn.xcdatamodeld in Sources */,
 				13FCE6E31EAA0B3900AB652F /* NewCardTableViewController.swift in Sources */,
 				13FCE6E11EAA01C900AB652F /* CardsManagerViewController.swift in Sources */,
@@ -370,11 +375,12 @@
 		1310AFE11EA75B76009AF3A3 /* CDPLearn.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				13FCE6E91EAB73E300AB652F /* CDPLearn 4.xcdatamodel */,
 				13FCE6E41EAA12DC00AB652F /* CDPLearn 3.xcdatamodel */,
 				13EB2BBA1EA9B4D300FCE828 /* CDPLearn 2.xcdatamodel */,
 				1310AFE21EA75B76009AF3A3 /* CDPLearn.xcdatamodel */,
 			);
-			currentVersion = 13FCE6E41EAA12DC00AB652F /* CDPLearn 3.xcdatamodel */;
+			currentVersion = 13FCE6E91EAB73E300AB652F /* CDPLearn 4.xcdatamodel */;
 			path = CDPLearn.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

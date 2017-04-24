@@ -77,14 +77,14 @@ extension Person {
     }
 
     func joinGroup(_ group: Group) {
-        self.groups = self.groups.adding(group) as NSSet
+        self.groups = self.groups!.adding(group) as NSSet
         _ = DataBaseManager.shareInstance.save()
     }
     
     func quitGroup(_ group: Group) {
-        let groups: NSMutableSet = self.groups.mutableCopy() as! NSMutableSet
+        let groups: NSMutableSet = self.groups!.mutableCopy() as! NSMutableSet
         groups.remove(group)
-        self.groups = groups.copy() as! NSSet
+        self.groups = groups.copy() as? NSSet
         _ = DataBaseManager.shareInstance.save()
     }
     

@@ -26,7 +26,7 @@ class DataBaseManager {
         }
         let storeURL = docURL.appendingPathComponent("DataModel.sqlite")
         do {
-            try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+            try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: ["NSMigratePersistentStoresAutomaticallyOption": true, "NSInferMappingModelAutomaticallyOption": true])
         } catch {
             fatalError("Error migrating store: \(error)")
         }

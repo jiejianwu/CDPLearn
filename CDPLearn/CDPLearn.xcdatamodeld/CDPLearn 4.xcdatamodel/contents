@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16D30" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BankCard" representedClassName="BankCard" syncable="YES" codeGenerationType="class">
+        <attribute name="balance" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="bankName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="bankCards" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Group" representedClassName="Group" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="leader" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="ownGroups" inverseEntity="Person" syncable="YES"/>
+        <relationship name="members" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="groups" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="pk" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sex" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="bankCards" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BankCard" inverseName="owner" inverseEntity="BankCard" syncable="YES"/>
+        <relationship name="groups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="members" inverseEntity="Group" syncable="YES"/>
+        <relationship name="ownGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Group" inverseName="leader" inverseEntity="Group" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="Person"/>
+    <elements>
+        <element name="BankCard" positionX="-162" positionY="-315" width="128" height="105"/>
+        <element name="Group" positionX="142" positionY="18" width="128" height="90"/>
+        <element name="Person" positionX="52" positionY="-333" width="128" height="150"/>
+    </elements>
+</model>

@@ -17,6 +17,19 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.tableFooterView = UIView()
+        
+//        let v = UIView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+//        v.backgroundColor = UIColor.red
+//        let label = UILabel()
+//        label.text = "我听闻妒始终一个人"
+//        label.font = UIFont.systemFont(ofSize: 14)
+//        label.textColor = UIColor.yellow
+//        label.sizeToFit()
+//        label.center = CGPoint(x: 100, y: 100)
+//        v.addSubview(label)
+//        view.addSubview(v)
+//        v.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 4))
+//        label.transform = CGAffineTransform(rotationAngle: -CGFloat(Double.pi / 4))
     }
     
     override func viewWillAppear(_ animated: Bool) {

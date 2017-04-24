@@ -10,17 +10,6 @@ import CoreData
 
 extension BankCard {
     
-//    class func getBankCards(by person: Person) -> [BankCard]? {
-//        let request: NSFetchRequest<BankCard> = BankCard.fetchRequest()
-//        request.predicate = NSPredicate(format: "owner.pk = %d", person.pk)
-//        do {
-//            return try DataBaseManager.shareInstance.objectContext?.fetch(request)
-//        } catch let err {
-//            print("request error: \(err.localizedDescription)")
-//            return nil
-//        }
-//    }
-    
     class func getBankCard(by number: String) -> BankCard? {
         let request: NSFetchRequest<BankCard> = BankCard.fetchRequest()
         request.predicate = NSPredicate(format: "cardNumber = %d", number)
@@ -43,13 +32,10 @@ extension BankCard {
         bankCard.cardNumber = cardNumber
         bankCard.owner = owner
         
-        do {
-            try DataBaseManager.shareInstance.save()
+        if DataBaseManager.shareInstance.save() {
             return bankCard
-        } catch let err {
-            print("save error: \(err.localizedDescription)")
-            return nil
         }
+        return nil
     }
     
     class func deleteBankCards(_ bankCards:[BankCard]) {

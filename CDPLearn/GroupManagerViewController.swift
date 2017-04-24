@@ -23,9 +23,15 @@ class GroupManagerViewController: UIViewController {
         prepareData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? GroupMemberViewController {
+            vc.group = sender as? Group
+        }
+    }
+    
     func prepareData() {
-        ownGroups = person?.ownGroups.allObjects as? [Group]
-        memberGroups = person?.groups.allObjects as? [Group]
+        ownGroups = person?.ownGroups?.allObjects as? [Group]
+        memberGroups = person?.groups?.allObjects as? [Group]
         allGroups = Group.getAll()
         guard let own = ownGroups, let member = memberGroups, let all = allGroups else {
             return
@@ -106,8 +112,47 @@ extension GroupManagerViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableview.deselectRow(at: indexPath, animated: true)
+        var g: Group?
+        switch indexPath.section {
+        case 0:
+            if let o = ownGroups, o.count > 0 {
+                g = o[indexPath.row]
+            }
+        case 1:
+            if let m = memberGroups, m.count > 0 {
+                g = m[indexPath.row]
+            }
+        case 2:
+            if let o = otherGroups, o.count > 0 {
+                g = o[indexPath.row]
+            }
+        default:
+            g = nil
+        }
+        
+        guard let selectGroup = g else {
+            return
+        }
+        
+        performSegue(withIdentifier: "segue_push_member", sender: selectGroup)
+
+    }
+    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return indexPath.section > 0
+        
+        switch indexPath.section {
+        case 0:
+            return false
+        case 1:
+            return memberGroups?.count ?? 0 > 0
+        case 2:
+            return otherGroups?.count ?? 0 > 0
+        default:
+            return false
+        }
+
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {

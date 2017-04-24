@@ -23,7 +23,7 @@ class CardsManagerViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        bankCards = person?.bankCards.allObjects as? [BankCard]
+        bankCards = person?.bankCards?.allObjects as? [BankCard]
         tableview.reloadData()
     }
     
