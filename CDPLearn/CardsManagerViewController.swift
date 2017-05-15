@@ -25,10 +25,11 @@ class CardsManagerViewController: UIViewController {
         super.viewWillAppear(animated)
         bankCards = person?.bankCards?.allObjects as? [BankCard]
         tableview.reloadData()
+        
     }
     
     @IBAction func newPersonButtonTouched(_ sender: UIButton) {
-        performSegue(withIdentifier: "segue_push_card", sender: nil)
+        performSegue(withIdentifier: R.segue.cardsManagerViewController.segue_push_card, sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -46,7 +47,8 @@ extension CardsManagerViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "bankCardTableViewCell", for: indexPath) as! PersonTableViewCell
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.personTableViewCell.identifier, for: indexPath) as! PersonTableViewCell
         cell.setup(bankCard: bankCards![indexPath.row])
         return cell
     }

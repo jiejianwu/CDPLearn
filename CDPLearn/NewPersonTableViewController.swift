@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewPersonTableViewController: UITableViewController {
+final class NewPersonTableViewController: UITableViewController {
     
     var person: Person?
     var isNew: Bool {

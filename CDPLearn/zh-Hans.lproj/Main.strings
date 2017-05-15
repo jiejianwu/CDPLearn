@@ -1,0 +1,99 @@
+
+/* Class = "UILabel"; text = "age:"; ObjectID = "0zL-MN-fWn"; */
+"0zL-MN-fWn.text" = "age:";
+
+/* Class = "UIButton"; normalTitle = "New Card"; ObjectID = "55X-bZ-O8Z"; */
+"55X-bZ-O8Z.normalTitle" = "New Card";
+
+/* Class = "UILabel"; text = "index"; ObjectID = "5pm-eF-5lB"; */
+"5pm-eF-5lB.text" = "index";
+
+/* Class = "UIButton"; normalTitle = "New Group"; ObjectID = "6cZ-mQ-WQM"; */
+"6cZ-mQ-WQM.normalTitle" = "New Group";
+
+/* Class = "UITextField"; placeholder = "please input bank name"; ObjectID = "8Kw-vq-U3K"; */
+"8Kw-vq-U3K.placeholder" = "please input bank name";
+
+/* Class = "UILabel"; text = "sex"; ObjectID = "HQz-g0-dq6"; */
+"HQz-g0-dq6.text" = "sex";
+
+/* Class = "UINavigationItem"; title = "New Card"; ObjectID = "Hch-oc-4GS"; */
+"Hch-oc-4GS.title" = "New Card";
+
+/* Class = "UILabel"; text = "age"; ObjectID = "Ka2-gR-xrB"; */
+"Ka2-gR-xrB.text" = "age";
+
+/* Class = "UITextField"; placeholder = "please input your age"; ObjectID = "Kab-Cm-wmn"; */
+"Kab-Cm-wmn.placeholder" = "please input your age";
+
+/* Class = "UILabel"; text = "index"; ObjectID = "MJ9-Xb-otu"; */
+"MJ9-Xb-otu.text" = "index";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "MLJ-XA-f96"; */
+"MLJ-XA-f96.text" = "name";
+
+/* Class = "UISegmentedControl"; Qbf-wn-3t4.segmentTitles[0] = "Male"; ObjectID = "Qbf-wn-3t4"; */
+"Qbf-wn-3t4.segmentTitles[0]" = "Male";
+
+/* Class = "UISegmentedControl"; Qbf-wn-3t4.segmentTitles[1] = "Female"; ObjectID = "Qbf-wn-3t4"; */
+"Qbf-wn-3t4.segmentTitles[1]" = "Female";
+
+/* Class = "UILabel"; text = "sex"; ObjectID = "Qqo-8w-eSu"; */
+"Qqo-8w-eSu.text" = "sex";
+
+/* Class = "UILabel"; text = "age"; ObjectID = "TpY-4K-uQL"; */
+"TpY-4K-uQL.text" = "age";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "VIg-Je-qT6"; */
+"VIg-Je-qT6.text" = "name";
+
+/* Class = "UINavigationItem"; title = "New Person"; ObjectID = "cCA-g4-bwr"; */
+"cCA-g4-bwr.title" = "New Person";
+
+/* Class = "UILabel"; text = "age"; ObjectID = "cVR-97-uRw"; */
+"cVR-97-uRw.text" = "age";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "fCM-5M-rye"; */
+"fCM-5M-rye.text" = "name";
+
+/* Class = "UILabel"; text = "group name"; ObjectID = "fqN-9Q-txD"; */
+"fqN-9Q-txD.text" = "group name";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "gs7-oa-7Rr"; */
+"gs7-oa-7Rr.normalTitle" = "Submit";
+
+/* Class = "UILabel"; text = "sex:"; ObjectID = "lhU-NE-ZWg"; */
+"lhU-NE-ZWg.text" = "sex:";
+
+/* Class = "UILabel"; text = "leader name"; ObjectID = "mnB-2k-Azr"; */
+"mnB-2k-Azr.text" = "leader name";
+
+/* Class = "UILabel"; text = "member count"; ObjectID = "nNi-pM-ofQ"; */
+"nNi-pM-ofQ.text" = "member count";
+
+/* Class = "UILabel"; text = "bankName:"; ObjectID = "nhD-JF-pam"; */
+"nhD-JF-pam.text" = "bankName:";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "oWP-E9-EB2"; */
+"oWP-E9-EB2.normalTitle" = "Submit";
+
+/* Class = "UITextField"; placeholder = "please input your name"; ObjectID = "s00-BV-Se7"; */
+"s00-BV-Se7.placeholder" = "please input your name";
+
+/* Class = "UITextField"; placeholder = "please input your card number"; ObjectID = "snr-h7-RTH"; */
+"snr-h7-RTH.placeholder" = "please input your card number";
+
+/* Class = "UIButton"; normalTitle = "New Person"; ObjectID = "tEV-zF-yUi"; */
+"tEV-zF-yUi.normalTitle" = "New Person";
+
+/* Class = "UIButton"; normalTitle = "New Person"; ObjectID = "uSm-Rf-DHk"; */
+"uSm-Rf-DHk.normalTitle" = "New Person";
+
+/* Class = "UILabel"; text = "number:"; ObjectID = "uXQ-gy-Ima"; */
+"uXQ-gy-Ima.text" = "number:";
+
+/* Class = "UILabel"; text = "sex"; ObjectID = "ySl-lF-zgL"; */
+"ySl-lF-zgL.text" = "sex";
+
+/* Class = "UILabel"; text = "name:"; ObjectID = "yeY-qD-RS2"; */
+"yeY-qD-RS2.text" = "name:";

@@ -59,6 +59,7 @@ class GroupManagerViewController: UIViewController {
             textField.placeholder = "input the group name"
             textField.borderStyle = .roundedRect
         }
+        
         self.present(alertController, animated: true, completion: nil)
         
         guard let container = alertController.textFields?.first?.superview else {
@@ -73,9 +74,7 @@ class GroupManagerViewController: UIViewController {
         
     }
     
-    
 }
-
 
 extension GroupManagerViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -107,7 +106,7 @@ extension GroupManagerViewController: UITableViewDelegate, UITableViewDataSource
             cell.textLabel?.text = "No Group"
             return cell
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: "groupTableViewCell", for: indexPath) as! PersonTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.personTableViewCell.identifier, for: indexPath) as! PersonTableViewCell
         cell.setup(group: gs[indexPath.row])
         return cell
     }
@@ -136,7 +135,7 @@ extension GroupManagerViewController: UITableViewDelegate, UITableViewDataSource
             return
         }
         
-        performSegue(withIdentifier: "segue_push_member", sender: selectGroup)
+        performSegue(withIdentifier: R.segue.groupManagerViewController.segue_push_member, sender: selectGroup)
 
     }
     

@@ -8,7 +8,7 @@
 
 import CoreData
 
-class DataBaseManager {
+final class DataBaseManager {
     
     static let shareInstance = DataBaseManager()
     

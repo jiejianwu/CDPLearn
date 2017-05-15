@@ -15,7 +15,7 @@ enum Sex: Int {
     case Female = 1
     
     var desc: String {
-        return self == .Male ? "male" : "female"
+        return self == .Male ? R.string.localizable.male() : R.string.localizable.female()
     }
 }
 
@@ -30,7 +30,7 @@ extension Person {
         do {
             return try DataBaseManager.shareInstance.objectContext?.fetch(request)
         } catch let err {
-            print("request error: \(err.localizedDescription)")
+            print("\(R.string.stringManager.requestErrorInfo()) \(err.localizedDescription)")
             return nil
         }
     }
@@ -41,7 +41,7 @@ extension Person {
         do {
             return try DataBaseManager.shareInstance.objectContext?.fetch(request).first
         } catch let err {
-            print("request error: \(err.localizedDescription)")
+            print("\(R.string.stringManager.requestErrorInfo()) \(err.localizedDescription)")
             return nil
         }
     }
@@ -55,7 +55,7 @@ extension Person {
         person.name = name
         person.age = Int32(age)
         person.sex = Int32(sex.rawValue)
-        let key = "pk_index"
+        let key = R.string.stringManager.defaultKey()
         var index = UserDefaults.standard.integer(forKey: key)
         index += 1
         person.pk = Int32(index)

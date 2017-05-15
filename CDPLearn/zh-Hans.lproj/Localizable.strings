@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CDPLearn
+
+  Created by wjj on 2017/4/27.
+  Copyright © 2017年 wjj. All rights reserved.
+*/
+
+"male" = "男性";
+"female" = "女性";

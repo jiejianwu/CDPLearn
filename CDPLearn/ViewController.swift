@@ -76,6 +76,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = UIActivityViewController(activityItems: ["what the fuck"], applicationActivities: nil)
+        present(vc, animated: true, completion: nil)
+        
+        
+        return
         tableView.deselectRow(at: indexPath, animated: true)
         let actionSheet = UIAlertController(title: "what you wanna do", message: "touch it", preferredStyle: UIAlertControllerStyle.actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Update Infomation", style: UIAlertActionStyle.default, handler: { (action) in

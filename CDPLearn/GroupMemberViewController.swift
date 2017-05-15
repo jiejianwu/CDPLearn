@@ -44,7 +44,7 @@ extension GroupMemberViewController: UITableViewDelegate, UITableViewDataSource 
             return cell
         }
         
-        let cell = tableview.dequeueReusableCell(withIdentifier: "PersonTableViewCell", for: indexPath) as! PersonTableViewCell
+        let cell = tableview.dequeueReusableCell(withIdentifier: R.reuseIdentifier.personTableViewCell.identifier, for: indexPath) as! PersonTableViewCell
         
         if indexPath.section == 0 {
             cell.setup(person: group!.leader!)

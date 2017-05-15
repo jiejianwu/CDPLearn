@@ -15,6 +15,9 @@
 		1310AFE81EA75B76009AF3A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1310AFE61EA75B76009AF3A3 /* LaunchScreen.storyboard */; };
 		1310AFFC1EA776DD009AF3A3 /* Person+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310AFFB1EA776DD009AF3A3 /* Person+Extension.swift */; };
 		1310AFFE1EA77DEF009AF3A3 /* GlobalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1310AFFD1EA77DEF009AF3A3 /* GlobalDataManager.swift */; };
+		132C3AEF1EB1D11E00808B16 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132C3AEE1EB1D11E00808B16 /* R.generated.swift */; };
+		132C3AF81EB1DD2A00808B16 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 132C3AFA1EB1DD2A00808B16 /* Localizable.strings */; };
+		132C3AFE1EB1E66400808B16 /* StringManager.strings in Resources */ = {isa = PBXBuildFile; fileRef = 132C3AFD1EB1E66400808B16 /* StringManager.strings */; };
 		13EB2BB51EA85E4400FCE828 /* NewPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EB2BB41EA85E4400FCE828 /* NewPersonTableViewController.swift */; };
 		13EB2BB71EA8718C00FCE828 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EB2BB61EA8718C00FCE828 /* PersonTableViewCell.swift */; };
 		13EB2BB91EA9B18D00FCE828 /* BankCard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EB2BB81EA9B18D00FCE828 /* BankCard+Extension.swift */; };
@@ -23,6 +26,7 @@
 		13FCE6E61EAB360300AB652F /* GroupManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6E51EAB360300AB652F /* GroupManagerViewController.swift */; };
 		13FCE6E81EAB373F00AB652F /* Group+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6E71EAB373F00AB652F /* Group+Extension.swift */; };
 		13FCE6EB1EADCD0700AB652F /* GroupMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FCE6EA1EADCD0700AB652F /* GroupMemberViewController.swift */; };
+		19FC4646DF78E8C116CA0C12 /* Pods_CDPLearn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC50FE4BA1CDEBF5259FABF /* Pods_CDPLearn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,12 @@
 		1310AFE91EA75B76009AF3A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1310AFFB1EA776DD009AF3A3 /* Person+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+Extension.swift"; sourceTree = "<group>"; };
 		1310AFFD1EA77DEF009AF3A3 /* GlobalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalDataManager.swift; sourceTree = "<group>"; };
+		132C3AEE1EB1D11E00808B16 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		132C3AF21EB1DBE300808B16 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		132C3AF31EB1DBE300808B16 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		132C3AF91EB1DD2A00808B16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		132C3AFC1EB1DD2F00808B16 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		132C3AFD1EB1E66400808B16 /* StringManager.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = StringManager.strings; sourceTree = "<group>"; };
 		13EB2BB41EA85E4400FCE828 /* NewPersonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPersonTableViewController.swift; sourceTree = "<group>"; };
 		13EB2BB61EA8718C00FCE828 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		13EB2BB81EA9B18D00FCE828 /* BankCard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BankCard+Extension.swift"; sourceTree = "<group>"; };
@@ -47,6 +57,9 @@
 		13FCE6E71EAB373F00AB652F /* Group+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Group+Extension.swift"; sourceTree = "<group>"; };
 		13FCE6E91EAB73E300AB652F /* CDPLearn 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CDPLearn 4.xcdatamodel"; sourceTree = "<group>"; };
 		13FCE6EA1EADCD0700AB652F /* GroupMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMemberViewController.swift; sourceTree = "<group>"; };
+		3AC50FE4BA1CDEBF5259FABF /* Pods_CDPLearn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CDPLearn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50A91B122F98DF5FD9F3A95 /* Pods-CDPLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDPLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDPLearn/Pods-CDPLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC991FEC5822F3CD04839E0 /* Pods-CDPLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDPLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDPLearn/Pods-CDPLearn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FC4646DF78E8C116CA0C12 /* Pods_CDPLearn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +79,8 @@
 			children = (
 				1310AFD91EA75B76009AF3A3 /* CDPLearn */,
 				1310AFD81EA75B76009AF3A3 /* Products */,
+				A0EA715C045268124E6248E2 /* Pods */,
+				3A6CA55D628ABA2BB62E8BDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +110,9 @@
 				13FCE6E21EAA0B3900AB652F /* NewCardTableViewController.swift */,
 				13FCE6E51EAB360300AB652F /* GroupManagerViewController.swift */,
 				13FCE6EA1EADCD0700AB652F /* GroupMemberViewController.swift */,
+				132C3AEE1EB1D11E00808B16 /* R.generated.swift */,
+				132C3AFA1EB1DD2A00808B16 /* Localizable.strings */,
+				132C3AFD1EB1E66400808B16 /* StringManager.strings */,
 			);
 			path = CDPLearn;
 			sourceTree = "<group>";
@@ -116,6 +135,23 @@
 			path = CoreDataModel;
 			sourceTree = "<group>";
 		};
+		3A6CA55D628ABA2BB62E8BDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AC50FE4BA1CDEBF5259FABF /* Pods_CDPLearn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0EA715C045268124E6248E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C50A91B122F98DF5FD9F3A95 /* Pods-CDPLearn.debug.xcconfig */,
+				FDC991FEC5822F3CD04839E0 /* Pods-CDPLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +159,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1310AFEC1EA75B76009AF3A3 /* Build configuration list for PBXNativeTarget "CDPLearn" */;
 			buildPhases = (
+				54661F0933950E5CC13B1506 /* [CP] Check Pods Manifest.lock */,
+				132C3AED1EB1D07700808B16 /* ShellScript */,
 				1310AFD31EA75B76009AF3A3 /* Sources */,
 				1310AFD41EA75B76009AF3A3 /* Frameworks */,
 				1310AFD51EA75B76009AF3A3 /* Resources */,
+				B039D6CB7E464410AE17435F /* [CP] Embed Pods Frameworks */,
+				40A679B0A140C257B75A3B78 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +200,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 1310AFCE1EA75B76009AF3A3;
 			productRefGroup = 1310AFD81EA75B76009AF3A3 /* Products */;
@@ -177,6 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1310AFE81EA75B76009AF3A3 /* LaunchScreen.storyboard in Resources */,
+				132C3AF81EB1DD2A00808B16 /* Localizable.strings in Resources */,
+				132C3AFE1EB1E66400808B16 /* StringManager.strings in Resources */,
 				1310AFE51EA75B76009AF3A3 /* Assets.xcassets in Resources */,
 				1310AFE01EA75B76009AF3A3 /* Main.storyboard in Resources */,
 			);
@@ -184,12 +227,74 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		132C3AED1EB1D07700808B16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
+		40A679B0A140C257B75A3B78 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDPLearn/Pods-CDPLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54661F0933950E5CC13B1506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B039D6CB7E464410AE17435F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDPLearn/Pods-CDPLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1310AFD31EA75B76009AF3A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1310AFFC1EA776DD009AF3A3 /* Person+Extension.swift in Sources */,
+				132C3AEF1EB1D11E00808B16 /* R.generated.swift in Sources */,
 				13FCE6E81EAB373F00AB652F /* Group+Extension.swift in Sources */,
 				13EB2BB91EA9B18D00FCE828 /* BankCard+Extension.swift in Sources */,
 				1310AFDD1EA75B76009AF3A3 /* ViewController.swift in Sources */,
@@ -212,6 +317,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1310AFDF1EA75B76009AF3A3 /* Base */,
+				132C3AF21EB1DBE300808B16 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -220,8 +326,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				1310AFE71EA75B76009AF3A3 /* Base */,
+				132C3AF31EB1DBE300808B16 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		132C3AFA1EB1DD2A00808B16 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				132C3AF91EB1DD2A00808B16 /* Base */,
+				132C3AFC1EB1DD2F00808B16 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -231,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -282,6 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -324,6 +442,7 @@
 		};
 		1310AFED1EA75B76009AF3A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C50A91B122F98DF5FD9F3A95 /* Pods-CDPLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YT4B64ELT8;
@@ -337,6 +456,7 @@
 		};
 		1310AFEE1EA75B76009AF3A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC991FEC5822F3CD04839E0 /* Pods-CDPLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YT4B64ELT8;

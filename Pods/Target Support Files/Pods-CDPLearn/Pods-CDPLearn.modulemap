@@ -1,0 +1,6 @@
+framework module Pods_CDPLearn {
+  umbrella header "Pods-CDPLearn-umbrella.h"
+
+  export *
+  module * { export * }
+}
